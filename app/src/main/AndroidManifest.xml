@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edu.gatech.econet">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ChallengeView"></activity>
+        <activity
+            android:name=".AddChallengeScreen"
+            android:theme="@style/Theme.AppCompat.Dialog.Alert" />
+        <activity android:name=".ManageChallenge" />
+        <activity android:name=".AskView" />
+        <activity
+            android:name=".WelcomeActivity"
+            android:label="Econet">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="Log in to Econet" />
+        <activity
+            android:name=".habitTracker"
+            android:label="Habit Tracker"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".askQuestion"
+            android:label="Ask a Question" />
+        <activity
+            android:name=".adviceForum"
+            android:label="See Question and Answer" />
+        <activity
+            android:name=".AddTaskSearch"
+            android:label="Look for a new task"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ParamNewTask"
+            android:label="Edit parameters of the new task" />
+        <activity
+            android:name=".ForumTopicSelect"
+            android:label="Select the desired topic" />
+        <activity
+            android:name=".askReplayPop"
+            android:label="Your Answer"
+            android:theme="@style/Theme.AppCompat.Dialog.Alert" />
+    </application>
+
+</manifest>
